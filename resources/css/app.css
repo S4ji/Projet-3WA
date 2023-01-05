@@ -1,0 +1,421 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* CONFIG */
+
+:root {
+    
+    --maincolor: #2c2c2c;
+    --textlayout: #ffffff;
+    ---text: #070028;
+}
+
+
+html {
+    font-size: 62.5%;  
+}
+img {
+    max-width: 100%;
+    width: auto; /* pour ie */
+    height: auto;
+    -ms-interpolation-mode: bicubic; /* lissage pour IE */
+    image-rendering: -webkit-optimize-contrast; /* lissage pour Chrome au redimensionnement*/
+    width: 100%;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color:var(--maincolor)
+}
+h3 {
+    
+}
+
+
+a {
+    text-decoration: none;
+}
+/* *****************************************************************
+                        Layout
+***************************************************************** */
+.container {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.625rem;
+}
+/*$*****************************************************************
+FORM
+***************************************************************** */  
+form {
+  max-width: 500rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+form .form-control {
+  width: 100%;
+  height: 3.4rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.42857143;
+  background-color: #fff;
+  background-image: none;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+form .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.075), 0 0 8rem rgba(102, 175, 233, 0.6);
+}
+
+form >.btn-delete {
+  border: 0;
+}
+
+form .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  line-height: 1.42857143;
+  border-radius: 10%;
+  user-select: none;
+  color: #fff;
+  background-color: var(--maincolor);
+}
+
+
+form .btn:hover,
+form .btn:focus,
+form .btn:active {
+  color: #fff;
+  background-color: #707070;
+  border-color: #ffffff;
+}
+
+form textarea.form-control {
+  height: auto;
+  min-height: 1.4rem;
+  padding: 0.6rem 1.2rem;
+}
+
+form .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.075), 0 0 8rem rgba(102, 175, 233, 0.6);
+}
+
+.button-delete {
+  color: #fff;
+  background-color: #f43636;
+}
+
+.button-delete:hover,
+.button-delete:focus,
+.button-delete:active {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.button-edit {
+  color: #fff;
+  background-color: var(--maincolor);
+}
+
+.button-edit:hover,
+.button-edit:focus,
+.button-edit:active {
+  color: #fff;
+  background-color: #707070;
+}
+
+
+.formnostyle {
+  border:0;
+  margin: 0 auto;
+  padding: 0rem;
+  border-radius: 0;
+}
+
+.formheader {
+  color:white;
+}
+
+/* *****************************************************************
+CARD
+***************************************************************** */
+ .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+ }
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.1), 0 0.2rem 0.5rem rgba(0,0,0,0.1);
+  transition: transform 3s;
+}
+
+.card img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  object-position:center;
+}
+
+.card .productname {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.card .productdescription {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: 5rem;
+  overflow: scroll;
+}
+
+.card .productprice {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f44336;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.card button {
+  width: 80%;
+  padding: 1rem;
+  margin:1rem;
+  border: 0.1rem solid var(--maincolor);
+  border-radius: 0.5rem;
+  background-color: var(--maincolor);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #444;
+}
+
+.card:hover {
+  transform: translate(10px, -10px);
+  background: linear-gradient(45deg, rgba(204, 204, 204, 0.2), rgba(170, 170, 170, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.shoppingcart {
+  color:white;
+}
+
+
+
+/* *****************************************************************
+TABLEAU
+***************************************************************** */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0.2rem solid var(--maincolor);
+  color: --maincolor ; 
+  background-color: #eee;
+  
+}
+
+th {
+  background-color: var(--maincolor);
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+td {
+  border: 0.2rem solid var(--maincolor);
+  font-size: 1.4rem;
+}
+/* *****************************************************************
+FICHE PRODUIT
+***************************************************************** */
+
+.product-details {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 1rem; 
+}
+
+.product-img-column {
+  width: 100%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  object-position:center;
+}
+
+.info-column {
+  width: 100%; 
+  text-align: left; 
+  padding: 0 1rem;
+}
+
+.info-column p {
+  color: #666; 
+  font-size: 1.6rem; 
+  margin: 0; 
+  margin-bottom: 0.5rem; 
+}
+
+.info-column .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f43636;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-column button {
+  width: 80%; 
+  padding: 1rem; 
+  margin:1rem; 
+  border: 1px solid var(--maincolor); 
+  border-radius: 0.5rem; 
+  background-color: var(--maincolor); 
+  color: #fff; 
+  font-size: 1.2rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+.cgv {
+
+  margin: 0;
+  padding: 0;
+}
+
+.cgv p {
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+
+
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--maincolor);
+  color: #fff;
+  padding: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+footer div:first-of-type {
+  display: none;
+}
+
+footer div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+footer div:last-of-type {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+footer div:last-of-type a {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+/* *****************************************************************
+VERSION TABLETTE
+***************************************************************** */
+@media (min-width: 584px) {
+  footer div:first-of-type {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+
+  }
+
+  .card-container{
+    grid-template-columns: repeat(3, 1fr);
+   
+ }
+
+ .info-column {
+  width: 100%; 
+  text-align: center; 
+  padding: 0 1rem;
+}
+}
+
+/* *****************************************************************
+VERSION PC
+***************************************************************** */
+@media (min-width: 980px) {
+  
+}

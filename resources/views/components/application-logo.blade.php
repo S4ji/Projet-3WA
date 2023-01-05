@@ -1,0 +1,2 @@
+<svg fill="#fff" height="2rem" width="2rem" version="1.1" id="XMLID_216_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <g id="waypoint"> <g> <path d="M12.6,23.8l-3.7-8.7l-8.7-3.7L23.7,0.2L12.6,23.8z M5,11.3l5.3,2.3l2.3,5.3l6.9-14.5L5,11.3z"></path> </g> </g> </g></svg>
+
